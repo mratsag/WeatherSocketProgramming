@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        /* Genel Ayarlar */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #6e7dff, #5560ea);
+            color: #333;
+        }
+
+        /* Wrapper */
+        .weather-app-wrapper,
+        .weather-result-wrapper {
+            max-width: 600px;
+            width: 100%;
+            padding: 30px;
+            background: #fff;
+            border-radius: 12px; /* Daha yuvarlak köşeler */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover Etkisi */
+        .weather-app-wrapper:hover,
+        .weather-result-wrapper:hover {
+            transform: translateY(-10px); /* Yukarı kaydırma */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Gölgeleme arttırıldı */
+        }
+
+        /* Başlık */
+        h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #007BFF;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        /* Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        input[type="text"] {
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            transition: border 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #007BFF; /* Odaklanıldığında mavi renk */
+            outline: none;
+        }
+
+        button {
+            padding: 12px;
+            font-size: 18px;
+            color: #fff;
+            background: #007BFF;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05); /* Buton biraz büyür */
+        }
+
+        /* Sonuç Sayfası */
+        p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        a {
+            display: inline-block;
+            padding: 12px 18px;
+            font-size: 18px;
+            color: #007BFF;
+            text-decoration: none;
+            border: 1px solid #007BFF;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="weather-app-wrapper">
+        <h1>Weather Application</h1>
+        <form action="/weather" method="POST">
+            <label for="city_name">Enter City Name:</label>
+            <input type="text" id="city_name" name="city_name" required>
+            <button type="submit">Get Weather</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* Genel Ayarlar */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6e7dff, #5560ea);
+    color: #333;
+}
+
+/* Wrapper */
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Etkisi */
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Arka Planlar */
+.cloudy {
+    background-image: url('/static/images/cloudy.jpg'); /* Bulutlu hava resmi */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.sunny {
+    background-image: url('/static/images/sunny.jpg'); /* Güneşli hava resmi */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.rainy {
+    background-image: url('/static/images/rainy.jpg'); /* Yağmurlu hava resmi */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.snowy {
+    background-image: url('/static/images/snowy.jpg'); /* Karla kaplı hava resmi */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
