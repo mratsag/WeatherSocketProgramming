@@ -4,12 +4,15 @@ Bu proje, C dili ile yazılmış bir istemci (client) ve Java ile yazılmış bi
 
 ## 🛠 Proje Yapısı
 
-WeatherSocketProgramming/ 
-├── C_Client/ # C dili ile yazılmış client uygulaması 
-  └── client.c 
-  ├── Java_Server/ # Java ile yazılmış server uygulaması 
-  └── WeatherServer.java 
-  └── README.md
+
+```
+WeatherSocketProgramming/
+├── C_Client/             # C dili ile yazılmış client uygulaması
+│   └── client.c
+├── Java_Server/          # Java ile yazılmış server uygulaması
+│   └── WeatherServer.java
+└── README.md             # Proje açıklamalarını içeren dosya
+```
 
 
 ## 💡 Amaç
